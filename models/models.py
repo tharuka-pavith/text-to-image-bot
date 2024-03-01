@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 
 class HumanMessageModel(BaseModel):
@@ -6,4 +6,5 @@ class HumanMessageModel(BaseModel):
 
 
 class AIMessageModel(BaseModel):
-    ai_msg: str | None
+    ai_msg: str | None = Field(description="Response of the AI assistant")
+    url: str | None = Field(None)
