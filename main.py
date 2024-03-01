@@ -1,20 +1,15 @@
 from fastapi import FastAPI
 from uvicorn import run
-from chat_models.openai_model import get_chat_openai_chain
-from langchain.memory import ChatMessageHistory
 from models.models import HumanMessageModel, AIMessageModel
+from handlers.chat_handler import chat_agent_response
 
 app = FastAPI()
-chain = get_chat_openai_chain()
-chat_history = ChatMessageHistory()
 
 
 @app.post("/chat-bot")
 def chat_endpoint(chat: HumanMessageModel) -> AIMessageModel:
-    chat_history.add_user_message(chat.human_msg)
-    result = chain.invoke({"messages": chat_history.messages}).dict()
-    chat_history.add_ai_message(result['content'])
-    return AIMessageModel(ai_msg=result["content"])
+    response = chat_agent_response(chat)
+    return response
 
 
 if __name__ == "__main__":
