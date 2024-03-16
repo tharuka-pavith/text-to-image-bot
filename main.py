@@ -1,8 +1,10 @@
+import os
 from fastapi import FastAPI
 from uvicorn import run
 from models.models import HumanMessageModel, AIMessageModel
 from handlers.chat_handler import chat_agent_response
-
+from dotenv import load_dotenv
+load_dotenv()
 app = FastAPI()
 
 
