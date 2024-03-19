@@ -6,6 +6,7 @@ from firebase_admin import credentials
 from dotenv import load_dotenv
 load_dotenv()
 
+#Replace with real values when deploying
 SERVICE_ACCOUNT_KEY = {
     "type": os.environ["TYPE"],
     "project_id": os.environ["PROJECT_ID"],
