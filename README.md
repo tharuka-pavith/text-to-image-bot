@@ -14,6 +14,7 @@ This repository provides a chatbot API that utilizes a Generative Adversarial Ne
 * Additional dependencies listed in `requirements.txt`
 * Firebase Storage configured (You should have secrets with you)
 * OpenAI API key
+* Hugging Face Hub API token
 
 **Installation:**
 
@@ -38,8 +39,9 @@ This repository provides a chatbot API that utilizes a Generative Adversarial Ne
    AUTH_PROVIDER_X509_CERT_URL=<replace with original value>
    CLIENT_X509_CERT_URL=<replace with original value>
    UNIVERSE_DOMAIN=<replace with original value>
+   HUGGINGFACEHUB_API_TOKEN=<replace with original value>
    ```
-   You can get `OPENAI_API_KEY` from openAI's website. Other secret keys are for the Firebase configuration.
+   You can get `OPENAI_API_KEY` from openAI's website. Other secret keys are for the configuration of Firebase and Hugging Face.
 
 **Usage:**
 
