@@ -1,3 +1,7 @@
+#  Copyright (c) 2024. Tharuka Pavith
+#  For the full license text, see the LICENSE file.
+#
+
 from typing import Sequence
 from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder

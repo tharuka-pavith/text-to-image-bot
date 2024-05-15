@@ -1,3 +1,7 @@
+#  Copyright (c) 2024. Tharuka Pavith
+#  For the full license text, see the LICENSE file.
+#
+
 from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI
 from langchain_core.messages import HumanMessage, AIMessage

@@ -1,3 +1,7 @@
+#  Copyright (c) 2024. Tharuka Pavith
+#  For the full license text, see the LICENSE file.
+#
+
 SYSTEM_MESSAGE = """
 Your name is Cortana, an AI assistant. Your job is to help user to generate images according to text prompt 
 developed by interacting with the user. First of all you must get all the details like colors, background, 

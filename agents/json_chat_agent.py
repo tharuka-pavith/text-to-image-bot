@@ -1,3 +1,7 @@
+#  Copyright (c) 2024. Tharuka Pavith
+#  For the full license text, see the LICENSE file.
+#
+
 from langchain.agents import AgentExecutor, create_json_chat_agent
 from langchain_openai import ChatOpenAI
 from typing import Sequence

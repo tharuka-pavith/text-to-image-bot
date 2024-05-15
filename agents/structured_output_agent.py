@@ -1,3 +1,7 @@
+#  Copyright (c) 2024. Tharuka Pavith
+#  For the full license text, see the LICENSE file.
+#
+
 from typing import Sequence
 from dotenv import load_dotenv
 from tools.stabilityai_text_to_image import generate_image
