@@ -1,3 +1,5 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ## GAN-based Text-to-Image Synthesizer Chatbot API
 
 This repository provides a chatbot API that utilizes a Generative Adversarial Network (GAN) to generate images based on textual descriptions. 

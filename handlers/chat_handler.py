@@ -1,3 +1,7 @@
+#  Copyright (c) 2024. Tharuka Pavith
+#  For the full license text, see the LICENSE file.
+#
+
 from chat_models.openai_model import get_chat_openai_chain
 from langchain.memory import ChatMessageHistory
 from models.models import HumanMessageModel, AIMessageModel
